@@ -7,8 +7,8 @@ template: `
 <h2>{{ "Title: " + title + getSomething()}}</h2>
 
 <ul>
-<li *ngFor="let test of testArray">
-{{ test }}
+<li *ngFor="let testItem of testArray">
+{{testItem }}
 </li>
 </ul>`,
 // templateUrl: './courses.component.html'
