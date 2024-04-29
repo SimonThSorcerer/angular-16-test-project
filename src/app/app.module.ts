@@ -11,6 +11,7 @@ import { BooksDisplayTestComponent } from './books-display-test/books-display-te
 import { PointerComponent } from './pointer/pointer.component';
 import { SimonTest1Component } from './simon-test-1/simon-test-1.component';
 import { YoutubeStyleButtonsComponent } from './youtube-style-buttons/youtube-style-buttons.component';
+import { YoutubeStyleVideoTitleComponent } from './youtube-style-video-title/youtube-style-video-title.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { YoutubeStyleButtonsComponent } from './youtube-style-buttons/youtube-st
     BooksDisplayTestComponent,
     PointerComponent,
     SimonTest1Component,
-    YoutubeStyleButtonsComponent
+    YoutubeStyleButtonsComponent,
+    YoutubeStyleVideoTitleComponent
   ],
   imports: [
     BrowserModule,

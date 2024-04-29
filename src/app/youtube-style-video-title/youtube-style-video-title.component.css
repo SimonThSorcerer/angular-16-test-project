@@ -1,0 +1,22 @@
+@font-face {
+  font-family:'GoogleRoboto';
+  src: local('GoogleRoboto'), url('./asset/KFOlCnqEu92Fr1MmYUtfChc4EsA.woff2'), format('woff2'),
+  url ('./assets/font-file.woff'), format ('woff'), local('Times New Roman');
+}
+
+@font-face {
+  font-family:'BillionStars';
+  src: local('BillionStars'), url('./asset/BillionStars_PersonalUse.ttf'), format('ttf'),
+  local('Times New Roman');
+}
+
+
+#test-font-billion{
+font-family: 'BillionStars', sans-serif;
+}
+
+
+#test-font-roboto{
+  font-family: 'GoogleRoboto', sans-serif;
+  }
+
