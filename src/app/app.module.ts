@@ -3,21 +3,25 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { TestComponentComponent } from './test-component/test-component.component';
 import { TestComponent2Component } from './test-component2/test-component2.component';
 import { CoursesComponent } from './course-component/courses-component';
 import { TestComponent4Component } from './test-component4/test-component4.component';
 import { CourseService } from './course.service';
 import { BooksDisplayTestComponent } from './books-display-test/books-display-test.component';
+import { PointerComponent } from './pointer/pointer.component';
+import { SimonTest1Component } from './simon-test-1/simon-test-1.component';
+import { YoutubeStyleButtonsComponent } from './youtube-style-buttons/youtube-style-buttons.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    TestComponentComponent,
     TestComponent2Component,
     CoursesComponent,
     TestComponent4Component,
-    BooksDisplayTestComponent
+    BooksDisplayTestComponent,
+    PointerComponent,
+    SimonTest1Component,
+    YoutubeStyleButtonsComponent
   ],
   imports: [
     BrowserModule,
@@ -29,3 +33,4 @@ import { BooksDisplayTestComponent } from './books-display-test/books-display-te
 export class AppModule {
 
  }
+ 

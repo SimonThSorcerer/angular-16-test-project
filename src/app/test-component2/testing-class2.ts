@@ -1,4 +1,4 @@
-import { TestingClass } from "../test-component/testing-class";
+import { TestingClass } from "../pointer/testing-class";
 
 
 

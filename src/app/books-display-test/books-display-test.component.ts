@@ -17,8 +17,6 @@ export class BooksDisplayTestComponent {
 bookdisplayService = new BookDisplayService();
 books = this.bookdisplayService.displayAuthors();
 
-
-
   setBook(books: string[]) {
     this.books = books;
   }

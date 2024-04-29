@@ -24,7 +24,7 @@ getSomething() {
 
 testArray;
 
-//adding the service through dependency injection, don'1't forget to add the Service to providers: in app.module.ts
+//adding the service through dependency injection, don't forget to add the Service to providers: in app.module.ts
 constructor (testArray: CourseService) {
   this.testArray = testArray.getCourses();
 }
