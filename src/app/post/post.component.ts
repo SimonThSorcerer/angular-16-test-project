@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 import { OnInit } from '@angular/core';
 import { Input} from '@angular/core';
 
@@ -13,6 +13,12 @@ export class PostComponent implements OnInit{
   toPostListComponentThroughImport: string = `This is coming from the post component through import!!!!!!!!!!!!!!!`;
   toAppPostListThroughComponentTageAndPropertyBinding:string = `!!!!!!!!!!!This should be displayed in the post-list component, coming from the post component via .`
 
+  childMessage:string = `From child component using @ViewChild.`
+
+  outputChildMessage:string = `Message from Child Component via Output.`;
+
+  @Output()
+  messageEvent = new EventEmitter<string>();
 
   @Input()
   fromParent!: string;
@@ -24,6 +30,10 @@ export class PostComponent implements OnInit{
 
   ngOnInit(): void{
 
+  }
+
+  sendMessage() {
+    this.messageEvent.emit(this.outputChildMessage);
   }
 
 }

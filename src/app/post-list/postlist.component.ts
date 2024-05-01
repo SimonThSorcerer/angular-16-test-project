@@ -1,4 +1,4 @@
-import { Component} from '@angular/core';
+import { Component, EventEmitter, Output} from '@angular/core';
 import { OnInit } from '@angular/core';
 import { Input } from '@angular/core';
 import { PostComponent } from '../post/post.component';
@@ -10,12 +10,13 @@ import { PostComponent } from '../post/post.component';
 })
 export class PostlistComponent {
 postComponent = new PostComponent();
+comingFromPostComponentThroughImport: string = this.postComponent.toPostListComponentThroughImport;
 
 @Input()
-appPostListInput!: string;
-comingFromPostComponentThroughImport: string = this.postComponent.toPostListComponentThroughImport;
-@Input()
 comingFromPostComponentThroughComponentTagAndPropertyBinding!: string;
+
+@Output()
+messageEvent = new EventEmitter<string>();
 
 
 constructor () {

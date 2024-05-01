@@ -12,6 +12,13 @@
 <h1>App Navbar Component</h1>
 <app-navbar></app-navbar>
 <h1>This is the post app</h1>
+
 <app-post [fromParent] = 'parentMessage'></app-post>
-<h1>This is the postlist app</h1>
+<h1>This is the postlist app for the second time, notice how the proeprty binding import does not work</h1>
 <app-postlist></app-postlist>
+
+
+
+<h1>This should be the @ViewChild string from app.component</h1>
+<app-post [fromParent] ='parentMessage2' (messageEvent)='reciveMessage($event)'></app-post>
+{{fromPostComponentVariableDeclared}}
