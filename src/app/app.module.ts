@@ -15,6 +15,7 @@ import { YoutubeStyleVideoTitleComponent } from './youtube-style-video-title/you
 import { NavbarComponent } from './navbar/navbar.component';
 import { PostComponent } from './post/post.component';
 import { PostlistComponent } from './post-list/postlist.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { PostlistComponent } from './post-list/postlist.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [CourseService],
   bootstrap: [AppComponent]
