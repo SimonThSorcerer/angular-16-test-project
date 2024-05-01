@@ -10,13 +10,41 @@
   local('Times New Roman');
 }
 
+@font-face  {
+  font-family: 'Arial';
+  src: local('Arial'), url('./asset/Lalithabai.ttf'), format('ttf'),
+  local('Times New Roman')
+}
+
+.arial-font {
+font-family: 'Arial', sans-serif;
+}
+
+#arial-font {
+  font-family: 'Arial', sans-serif;
+}
 
 #test-font-billion{
 font-family: 'BillionStars', sans-serif;
 }
 
-
 #test-font-roboto{
-  font-family: 'GoogleRoboto', sans-serif;
-  }
+font-family: 'GoogleRoboto', sans-serif;
+}
 
+.video-title {
+font-family: Arial, Helvetica, sans-serif;
+}
+
+.video-title {
+  font-family: Arial;
+  font-weight: bold;
+  font-size: 18px;
+  width: 300px;
+  line-height: 24px;
+}
+
+.video-stats {
+  font-family: Arial, Helvetica, sans-serif;
+
+}

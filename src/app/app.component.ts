@@ -6,6 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = `Mock Youtube Practice Angular App`;
+  title:string = `Mock Youtube Practice Angular App`;
+  parentMessage:string = `Message coming from the parent component.`;
 }
 

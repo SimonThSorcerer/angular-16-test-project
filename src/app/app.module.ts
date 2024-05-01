@@ -12,6 +12,9 @@ import { PointerComponent } from './pointer/pointer.component';
 import { SimonTest1Component } from './simon-test-1/simon-test-1.component';
 import { YoutubeStyleButtonsComponent } from './youtube-style-buttons/youtube-style-buttons.component';
 import { YoutubeStyleVideoTitleComponent } from './youtube-style-video-title/youtube-style-video-title.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import { PostComponent } from './post/post.component';
+import { PostlistComponent } from './post-list/postlist.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +26,10 @@ import { YoutubeStyleVideoTitleComponent } from './youtube-style-video-title/you
     PointerComponent,
     SimonTest1Component,
     YoutubeStyleButtonsComponent,
-    YoutubeStyleVideoTitleComponent
+    YoutubeStyleVideoTitleComponent,
+    NavbarComponent,
+    PostComponent,
+    PostlistComponent
   ],
   imports: [
     BrowserModule,
@@ -35,4 +41,3 @@ import { YoutubeStyleVideoTitleComponent } from './youtube-style-video-title/you
 export class AppModule {
 
  }
- 
