@@ -9,3 +9,22 @@
   </div>
   <button type="submit" class="btn btn-primary">Submit</button>
 </form>
+<p>books-display-test works!</p>
+
+<form (ngSubmit)="submitForm()">
+  <div class="form-group">
+    <label for="inputData">Enter Data:</label>
+    <!-- <input type="text" class="form-control" id="inputData" name="inputData" [(ngModel)]='submittedData'> -->
+    <!-- <input type="text" [(value)]="submittedData" (input)="onInput($event)" /> -->
+    <input type="text" [(ngModel)]="submittedData" name="submitData" />
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+<h1>Another form with Enter:</h1>
+<label for="inputDataEnter">Enter Data and then press enter:</label>
+<input type="text" (keyup.enter)='onKeyUp($event)' />
+{{submittedData}}
+<h1>Third form with Enter:</h1>
+<label for="inputDataEnter">Enter Data and then press enter:</label>
+<input type="text" (keyup.enter)='onKeyUp2(username.value)' #username />

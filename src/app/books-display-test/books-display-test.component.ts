@@ -40,4 +40,11 @@ books = this.bookdisplayService.displayAuthors();
 console.log(this.submittedData)
   }
 
+  onKeyUp($event: any) {
+    this.submittedData = $event.target.value;
+  }
+
+  onKeyUp2(username: string) {
+    this.submittedData = username;
+  }
 }
