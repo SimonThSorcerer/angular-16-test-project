@@ -1,0 +1,24 @@
+<p>two-directional-data-binding-form test</p>
+
+
+<form (ngSubmit)="submitForm()">
+<label for="post-title"></label>
+<input type="text" id="post-title" [(ngModel)] ="inputPostTitle" name="post-title" placeholder="Title:" required>
+<br><br>
+<label for="post-body"></label>
+<input type="text" id="post-body" [(ngModel)] ="inputPostBody" name="post-body" placeholder="Body:" required>
+<br><br>
+<label for="background-color"></label>
+<input type="text" id="background-color" [(ngModel)]="inputBackgroundColor" name="background-color" placeholder="Background color:">
+<br><br>
+<button type="submit">Submit</button>
+</form>
+
+
+
+<div [ngStyle]="getPostTitleStyle()">
+  Title: {{submittedTitle}}
+</div>
+<div>
+Body: {{submittedBody}}
+</div>

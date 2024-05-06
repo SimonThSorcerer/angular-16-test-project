@@ -20,6 +20,7 @@ export class BooksDisplayTestComponent {
   title: string = `Testing title`;
   book: string = `test`;
   submittedData: string = '';
+  userName2: string ='';
 
 bookdisplayService = new BookDisplayService();
 books = this.bookdisplayService.displayAuthors();
@@ -34,6 +35,10 @@ books = this.bookdisplayService.displayAuthors();
 
   submitForm() {
     console.log(`Submitted data:`, this.submittedData)
+  }
+
+  submitFormTwoWayDataBinding(){
+    console.log(this.userName2);
   }
 
   onInput() {

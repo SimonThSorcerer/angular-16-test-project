@@ -16,6 +16,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { PostComponent } from './post/post.component';
 import { PostlistComponent } from './post-list/postlist.component';
 import { FormsModule } from '@angular/forms';
+import { TwoDirectionalDataBindingFormComponent } from './two-directional-data-binding-form/two-directional-data-binding-form.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { FormsModule } from '@angular/forms';
     YoutubeStyleVideoTitleComponent,
     NavbarComponent,
     PostComponent,
-    PostlistComponent
+    PostlistComponent,
+    TwoDirectionalDataBindingFormComponent
   ],
   imports: [
     BrowserModule,

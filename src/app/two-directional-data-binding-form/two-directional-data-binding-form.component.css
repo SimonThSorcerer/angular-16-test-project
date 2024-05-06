@@ -1,0 +1,14 @@
+.div-background-color {
+  background-color: white;
+}
+
+.div-post-body {
+  text-align: left;
+  text-align: justify;
+  text-justify: auto;
+}
+
+.div-post-title {
+  font-weight: bold;
+}
+

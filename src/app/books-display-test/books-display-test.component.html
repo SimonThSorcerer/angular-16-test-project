@@ -1,5 +1,3 @@
-<p>books-display-test works!</p>
-
 <form (ngSubmit)="submitForm()">
   <div class="form-group">
     <label for="inputData">Enter Data:</label>
@@ -9,6 +7,7 @@
   </div>
   <button type="submit" class="btn btn-primary">Submit</button>
 </form>
+{{submittedData}}
 <p>books-display-test works!</p>
 
 <form (ngSubmit)="submitForm()">
@@ -28,3 +27,12 @@
 <h1>Third form with Enter:</h1>
 <label for="inputDataEnter">Enter Data and then press enter:</label>
 <input type="text" (keyup.enter)='onKeyUp2(username.value)' #username />
+
+<h1 class="make-it-rain">Two way data binding example:</h1>
+
+<form (ngSubmit)="submitFormTwoWayDataBinding()">
+<label for= "username-form"></label>
+<input type= "text" id= "username-form" [(ngModel)] = "userName2" name= "username-input">
+<button>Click</button>
+</form>
+{{userName2}}
