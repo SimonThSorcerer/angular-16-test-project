@@ -17,6 +17,9 @@ import { PostComponent } from './post/post.component';
 import { PostlistComponent } from './post-list/postlist.component';
 import { FormsModule } from '@angular/forms';
 import { TwoDirectionalDataBindingFormComponent } from './two-directional-data-binding-form/two-directional-data-binding-form.component';
+import { ReadStudentDataService } from './read-student-data.service';
+import { DisplayStudentFromRestcontrollerComponent } from './display-student-from-restcontroller/display-student-from-restcontroller.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -32,14 +35,16 @@ import { TwoDirectionalDataBindingFormComponent } from './two-directional-data-b
     NavbarComponent,
     PostComponent,
     PostlistComponent,
-    TwoDirectionalDataBindingFormComponent
+    TwoDirectionalDataBindingFormComponent,
+    DisplayStudentFromRestcontrollerComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
-  providers: [CourseService],
+  providers: [CourseService, ReadStudentDataService],
   bootstrap: [AppComponent]
 })
 export class AppModule {
